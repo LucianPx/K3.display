@@ -130,9 +130,9 @@ local player = iblib.playlist{
 
     switch_time = CONFIG.switch_time,
 
-    fade = function(...)
+    fade = function(item, ...)
         title_start = sys.now() + 1.0
-        return faders[CONFIG.fade](...)
+        return faders[item.fade or "crossfade"](...)
     end;
 
     draw = util.draw_correct;
