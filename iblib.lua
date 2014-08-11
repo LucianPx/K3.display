@@ -113,7 +113,7 @@ function playlist(opt)
             if next_item then
                 next_surface = next_item.file.get_surface()
             end
-            opt.fade(current_surface, next_surface, progress, ...)
+            opt.fade(next_item, current_surface, next_surface, progress, ...)
         else
             opt.draw(current_surface, ...)
         end

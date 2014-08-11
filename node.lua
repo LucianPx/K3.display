@@ -132,7 +132,7 @@ local player = iblib.playlist{
 
     fade = function(item, ...)
         title_start = sys.now() + 1.0
-        return faders[item.fade or "crossfade"](...)
+        return faders[item and item.fade or "crossfade"](...)
     end;
 
     draw = util.draw_correct;
