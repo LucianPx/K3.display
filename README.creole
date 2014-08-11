@@ -1,0 +1,46 @@
+= Simple Play list player
+
+{{screenshot.jpg|Screenshot}}
+
+== Description
+
+This is a small example of a simple play list player that supports any resource type. This includes images, videos and other
+packages. Is supports various transitions when switching between items. You can display a name for each item that is
+displayed after switching completed.
+
+== Example usage
+
+You can use this Package to display a bunch of images. Upload the images using the <<assets>>. Then create a new Setup based
+on this Package. To do that, go to the <<packages>>, select the //Simple Playlist player// Package and then click the //Create
+Setup// button. Give your new Setup a name.
+
+The configuration screen for your new Setup allows you to specify which assets you want to play. Click the //Add item// 
+Button for each Asset you want to play. In the new row that appears, select the //Asset// field. Delete the default value
+(empty.png) and select the image you previously uploaded.
+
+When done, click save. Your Setup is now ready for your Device.
+
+== Settings
+
+=== Background Color (background_color)
+
+Use this to set a background color. Black is recommended.
+
+=== Transitions (fade)
+
+Selects the transition that will be used when switching between items.
+
+* Fade in/Fade out - The current item is faded out while the new items is faded in.
+* Move in/out - The current item slides to the right while the new items slides in from the left.
+* Move in/Shrink out - The current item fades out and get smaller while the new item slides in from the left.
+* Flip animation - The current item animates away into the background while the new item slides in from the left.
+
+=== Switch time (switch_time)
+
+Number of seconds for the transition.
+
+=== Show title (show_title)
+
+The playlist player can optionally display a short text about the current item each time a new
+items starts playing. This can for example be used to show the name of a video or image each
+time it plays.
