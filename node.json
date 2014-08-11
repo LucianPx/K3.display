@@ -56,14 +56,14 @@
         "itemname": "Item",
         "items": [{
             "title": "Asset",
-            "ui_width": 4,
+            "ui_width": 3,
             "name": "file",
             "type": "resource",
             "valid": ["image", "video", "child"],
             "default": "empty.png"
         }, {
             "title": "Play time",
-            "ui_width": 2,
+            "ui_width": 3,
             "name": "duration",
             "type": "duration",
             "default": 5
