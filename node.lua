@@ -118,10 +118,8 @@ local player = iblib.playlist{
         if idx > #playlist then
             idx = 1
         end
-        if playlist[idx].duration == 11 then
-            local item = playlist[idx]
-        end
-        
+
+        local item = playlist[idx]
 
         if not item then
             return false, nil
