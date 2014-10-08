@@ -42,7 +42,7 @@ function playlist(opt)
         end
 
         if state == "getnext" then
-            if opt.asset_name ~= "wifi" then
+            if opt.asset_name ~= "main_03_10_tr10_SA-Party.jpg" then
                 has_next, next_item = opt.get_next_item()
                 if not has_next then
                     print("no item")
