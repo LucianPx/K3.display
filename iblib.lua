@@ -42,6 +42,7 @@ function playlist(opt)
         end
 
         if state == "getnext" then
+            if string.find(next_item.file.filename, "d2014c077") == nil then
                 has_next, next_item = opt.get_next_item()
                 if not has_next then
                     print("no item")
@@ -51,6 +52,7 @@ function playlist(opt)
                     fade_start = now + current_item.duration - switch_time
                     preload_start = fade_start - (next_item.load_time or 0)
                 end
+            end
         end
 
         if state == "wait" then
