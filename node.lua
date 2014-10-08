@@ -148,8 +148,10 @@ end)
 
 function node.render()
     CONFIG.background_color.clear()
-
-    player.draw(0, 0, WIDTH, HEIGHT)
+    if CONFIG.title == wifi then
+        player.draw(0, 0, 0, 0)
+    else
+        player.draw(0, 0, WIDTH, HEIGHT)
 
     if CONFIG.show_title then
         local now = sys.now()
@@ -165,7 +167,7 @@ function node.render()
             end
             CONFIG.title_font:write(
                 10, HEIGHT - CONFIG.title_size - 5, 
-                CONFIG.duration,
+                CONFIG.title,
                 CONFIG.title_size,
                 1, 1, 1, alpha
             )
