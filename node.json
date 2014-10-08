@@ -43,6 +43,35 @@
         "title": "Title options",
         "type": "section"
     }, {
+        "title": "Show title",
+        "info": "Show title after switch",
+        "hint": "Whether or not to how the title of the current item after its playback started",
+        "doc_link": true,
+        "ui_width": 4,
+        "ui_spacing": 8,
+        "name": "show_title",
+        "type": "boolean",
+        "default": true
+    }, {
+        "title": "Title Font",
+        "ui_width": 4,
+        "name": "title_font",
+        "type": "font",
+        "default": "silkscreen.ttf"
+    }, {
+        "title": "Font size",
+        "ui_width": 4,
+        "name": "title_size",
+        "type": "integer",
+        "default": 20
+    }, {
+        "title": "Title Duration",
+        "ui_width": 4,
+        "hint": "How long should the title be displayed",
+        "name": "title_duration",
+        "type": "duration",
+        "default": 5 
+    }, {
         "title": "Playlist",
         "name": "playlist",
         "type": "list",
