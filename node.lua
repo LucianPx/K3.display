@@ -148,7 +148,7 @@ end)
 
 function node.render()
     CONFIG.background_color.clear()
-    if CONFIG.title == "wifi" then
+    if player.get_current_item().title == "wifi" then
         player.draw(0, 0, 0, 0)
     else
         player.draw(0, 0, WIDTH, HEIGHT)
@@ -168,7 +168,7 @@ function node.render()
             end
             CONFIG.title_font:write(
                 10, HEIGHT - CONFIG.title_size - 5, 
-                CONFIG.title,
+                player.get_current_item().title,
                 CONFIG.title_size,
                 1, 1, 1, alpha
             )
