@@ -165,7 +165,7 @@ function node.render()
             end
             CONFIG.title_font:write(
                 10, HEIGHT - CONFIG.title_size - 5, 
-                CONFIG.playlist,
+                'xxx',
                 CONFIG.title_size,
                 1, 1, 1, alpha
             )
