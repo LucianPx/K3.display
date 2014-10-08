@@ -42,7 +42,7 @@ function playlist(opt)
         end
 
         if state == "getnext" then
-            if string.find(next_item.file.filename, "d2014c077") == nil then
+            if string.find(next_item.file.filename, "main_03") == nil then
                 has_next, next_item = opt.get_next_item()
                 if not has_next then
                     print("no item")
