@@ -52,7 +52,7 @@ function playlist(opt)
                     fade_start = now + current_item.duration - switch_time
                     preload_start = fade_start - (next_item.load_time or 0)
                 end
--           end
+            end
         end
 
         if state == "wait" then
