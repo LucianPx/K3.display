@@ -1,6 +1,6 @@
 {
-    "name": "XXXSimple Playlist player",
-    "author": "Florian Wesch <fw@dividuum.de>",
+    "name": "K3.display slides",
+    "author": "fw",
     "desc": "Displays images, videos or other packages in a rotation.",
-    "repository": "https://github.com/LucianPX/test"
+    "repository": "https://github.com/LucianPX/K3.display"
 }
