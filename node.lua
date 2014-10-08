@@ -166,7 +166,7 @@ function node.render()
             CONFIG.title_font:write(
                 10, HEIGHT - CONFIG.title_size - 5, 
                 'HAHAHAHAH',
-                50,
+                CONFIG.title_size,
                 1, 1, 1, alpha
             )
         end
