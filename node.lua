@@ -151,7 +151,7 @@ function node.render()
 
     player.draw(0, 0, WIDTH, HEIGHT)
 
-    if CONFIG.show_title then
+--    if CONFIG.show_title then
         local now = sys.now()
         if now > title_start then
             local in_title = now - title_start
@@ -170,5 +170,5 @@ function node.render()
                 1, 1, 1, alpha
             )
         end
-    end
+--    end
 end
