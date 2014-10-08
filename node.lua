@@ -148,7 +148,7 @@ end)
 
 function node.render()
     CONFIG.background_color.clear()
-    if CONFIG.title == wifi then
+    if CONFIG.title == "wifi" then
         player.draw(0, 0, 0, 0)
     else
         player.draw(0, 0, WIDTH, HEIGHT)
