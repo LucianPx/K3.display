@@ -150,9 +150,6 @@ function node.render()
     CONFIG.background_color.clear()
     player.draw(0, 0, WIDTH, HEIGHT)
 
-    if player.get_current_item().title == "wifi" then
-        CONFIG.background_color.clear()
-    end
 
     if CONFIG.show_title then
         local now = sys.now()
@@ -168,7 +165,7 @@ function node.render()
             end
             CONFIG.title_font:write(
                 10, HEIGHT - CONFIG.title_size - 5, 
-                player.get_current_item().title,
+                CONFIG.playlist,
                 CONFIG.title_size,
                 1, 1, 1, alpha
             )
