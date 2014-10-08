@@ -152,6 +152,7 @@ function node.render()
         player.draw(0, 0, 0, 0)
     else
         player.draw(0, 0, WIDTH, HEIGHT)
+    end
 
     if CONFIG.show_title then
         local now = sys.now()
