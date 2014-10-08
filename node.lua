@@ -118,8 +118,10 @@ local player = iblib.playlist{
         if idx > #playlist then
             idx = 1
         end
-
-        local item = playlist[idx]
+        if playlist[idx].duration ~= 11 then
+            local item = playlist[idx]
+        end
+        
 
         if not item then
             return false, nil
@@ -165,7 +167,7 @@ function node.render()
             end
             CONFIG.title_font:write(
                 10, HEIGHT - CONFIG.title_size - 5, 
-                'xxx',
+                player.get_current_item().title,
                 CONFIG.title_size,
                 1, 1, 1, alpha
             )
