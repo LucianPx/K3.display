@@ -1,4 +1,4 @@
--- Part of info-beamer hosted
+-- Part of info-beamer hostedx
 --
 -- Copyright (c) 2014, Florian Wesch <fw@dividuum.de>
 -- All rights reserved.
