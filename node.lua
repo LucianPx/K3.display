@@ -1,5 +1,5 @@
 hosted_init()
-gl.setup(1024, 768)
+gl.setup(1920, 1080)
 
 local iblib = require "iblib"
 
